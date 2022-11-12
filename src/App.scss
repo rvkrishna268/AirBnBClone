@@ -1,0 +1,20 @@
+.app{
+    height: 100vh;
+    font-family: Raleway;
+    
+
+    .sections{
+        width: 100%;
+        height: calc(100vh - 10px);
+        position: relative;
+        top: 10px;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none;
+        > *{
+            width: 100vw;
+            height: calc(100vh - 150px);
+            scroll-snap-align:start;
+        }
+    }
+}
